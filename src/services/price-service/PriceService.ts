@@ -48,7 +48,7 @@ export const getSpecialPrice = async (req: Request, res: Response) => {
     if (response.product[0].existencia <= 0) {
       return res.status(200).json({result: "Out of stock"});
     }
-
+    delete response.product[0]._id
     return res.status(200).json(response.product[0]);
   } catch (error) {
     console.error("Error getting special price:", error);
