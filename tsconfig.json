@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+      "target": "ES2018",
+      "module": "CommonJS",
+      "outDir": "./dist", // Carpeta donde se generará el código compilado
+      "rootDir": "./src", // Carpeta donde se encuentran los archivos fuente TypeScript
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "removeComments": false,
+      "sourceMap": true,
+      "resolveJsonModule": true,
+      "declaration": false
+    },
+    "include": ["src/**/*.ts"],
+    "exclude": ["node_modules"]
+  }
+  
